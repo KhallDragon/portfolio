@@ -8,9 +8,7 @@
     @include responsive(celu){
         padding-inline: $l;
         padding-top: $l;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        grid-template-columns: 1fr;
     }
     &__saludo {
         display: flex;

@@ -41,9 +41,7 @@ ul {
     .principal {
       padding-inline: 2rem;
       padding-top: 2rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between; } }
+      grid-template-columns: 1fr; } }
   .principal__saludo {
     display: flex;
     flex-direction: column;
