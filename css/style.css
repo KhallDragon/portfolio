@@ -1,10 +1,38 @@
+@charset "UTF-8";
+/*COLORES*/
+/*TAMAÑOS DE TIPOGRAFIA*/
+/* ESPACIADO*/
+/*TIPOGRAFIAS*/
 * {
   padding: 0;
   margin: 0;
   text-decoration: none; }
 
 .principal {
+  height: 100vh;
+  padding-inline: 5rem;
   background: #2b2d42;
   background: linear-gradient(90deg, #2b2d42 39%, #4e2c70 100%);
   display: grid;
   grid-template-columns: 1fr 1fr; }
+  .principal__saludo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .principal__hola {
+    font-size: 2.5rem;
+    color: #5591F5;
+    font-family: "Sono", sans-serif; }
+  .principal__nombre {
+    font-size: 5rem;
+    color: #5591F5;
+    font-family: "Rajdhani", sans-serif; }
+  .principal__parrafo {
+    font-size: 2 rem;
+    color: #5591F5;
+    font-family: "Sono", sans-serif; }
+  .principal__avatar {
+    display: flex;
+    align-items: end; }
+  .principal__img img {
+    height: 85vh; }

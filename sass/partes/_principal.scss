@@ -1,7 +1,37 @@
 .principal{
+    height: 100vh;
+    padding-inline: $xxl;
     background: rgb(43,45,66);
     background: linear-gradient(90deg, rgba(43,45,66,1) 39%, rgba(78,44,112,1) 100%);
     display: grid;
     grid-template-columns: 1fr 1fr; 
-
+    &__saludo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__hola{
+        font-size: $titulo2;
+        color: $color5;
+        font-family: $tipografia2;
+    }
+    &__nombre{
+        font-size: $titulo;
+        color: $color5;
+        font-family: $tipografia1;
+    }
+    &__parrafo{
+        font-size: $subtitulo;
+        color: $color5;
+        font-family: $tipografia2;
+    }
+    &__avatar{
+        display: flex;
+        align-items: end;
+    }
+    &__img{
+        img{
+        height: 85vh;
+        }
+    }
 }
