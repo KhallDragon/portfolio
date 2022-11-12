@@ -1,0 +1,48 @@
+.sobremi{
+    background-color: $color2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: $color6;
+    @include responsive (celu){
+        display: flex;
+        flex-direction: column-reverse;
+        padding: $m;
+    }
+    &__img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            height: 80%;
+            border-radius: 16rem;
+            @include responsive (celu){
+                width: 70vw;
+            }
+        }
+    }
+    &__info{
+        margin: $xxl2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-family: $tipografia1;
+        margin-left: 0;
+        @include responsive (celu){
+            margin: $m;
+        }
+        hr {
+            width: 15%;
+        }
+    }
+    &__titulo{        
+        margin-bottom: $l;
+        h2{
+            font-size: $subtitulo;
+        }
+    }
+    &__parrafo{
+        font-family: $tipografia2;
+        color:$color5;
+        font-size: $parrafo;
+    }
+}

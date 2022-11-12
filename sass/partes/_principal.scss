@@ -10,26 +10,33 @@
         padding-top: $l;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
     }
     &__saludo {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        margin-top: $xl;
     }
     &__hola{
         font-size: $titulo2;
         color: $color5;
         font-family: $tipografia2;
+        @include responsive (celu){
+            font-size: $subtitulo;
+        }
     }
     &__nombre{
+        display: inline-block;
         font-size: $titulo;
         color: $color5;
         font-family: $tipografia1;
+        @include responsive (celu){
+            font-size: $titulo2;
+        }
     }
     &__parrafo{
-        font-size: $subtitulo;
+        font-size: $parrafo;
         color: $color5;
         font-family: $tipografia2;
     }

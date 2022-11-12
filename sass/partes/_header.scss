@@ -1,0 +1,17 @@
+.menu{
+    margin-inline: $xxl;
+    position:fixed;
+    display: flex;
+    margin-top: $l;
+    @include responsive (celu){
+        display: none;
+    }
+    &__lista{
+        margin-right: $xl;
+        a{
+            color: $color5;
+            font-size: $parrafo;
+            font-family: $tipografia1;
+        }
+    }
+}
