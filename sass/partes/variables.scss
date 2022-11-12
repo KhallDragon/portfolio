@@ -26,3 +26,17 @@ $s: 0.5rem;
 
 $tipografia1: 'Rajdhani', sans-serif;
 $tipografia2: 'Sono', sans-serif;
+
+
+/* mixin y maps*/
+$breakpoint: (
+    celu: 425px,
+    tablet: 768px,
+    pc: 1024px
+);
+
+@mixin responsive($dispositivo){
+    @media screen and (max-width: map-get($breakpoint, $dispositivo)){
+        @content;
+    }
+}

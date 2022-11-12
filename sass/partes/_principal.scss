@@ -5,6 +5,14 @@
     background: linear-gradient(90deg, rgba(43,45,66,1) 39%, rgba(78,44,112,1) 100%);
     display: grid;
     grid-template-columns: 1fr 1fr; 
+    @include responsive(celu){
+        padding-inline: $l;
+        padding-top: $l;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
     &__saludo {
         display: flex;
         flex-direction: column;
@@ -28,10 +36,14 @@
     &__avatar{
         display: flex;
         align-items: end;
-    }
-    &__img{
         img{
-        height: 85vh;
+            height: 85vh;
+            @include responsive(celu){
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }
         }
+    
     }
 }
